@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="companias_crud.Pages.CompanyDetail"
+    Title="Detalle Compañia">
+    <StackLayout Padding="20">
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Entry
+                FontSize="18"
+                Text="{Binding Id}"
+                IsVisible="false"
+                IsReadOnly="True" />
+        </StackLayout>
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Label
+                Text="Compañia:"
+                FontAttributes="Bold"
+                FontSize="20" />
+            <Entry
+                FontSize="18"
+                Text="{Binding Nombre}"
+                IsReadOnly="True" />
+        </StackLayout>
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Label Text="Direccion:"
+                   FontAttributes="Bold"
+                   FontSize="20" />
+            <Entry
+                FontSize="18"
+                Text="{Binding Direccion}"
+                IsReadOnly="True" />
+        </StackLayout>
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Label
+                Text="Telefono:"
+                FontAttributes="Bold"
+                FontSize="20" />
+            <Entry
+                Keyboard="Numeric"
+                FontSize="18"
+                Text="{Binding Telefono}"
+                IsReadOnly="True" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="companias_crud.Pages.ModifyPage"
+    Title="Modificar Compañia">
+    <StackLayout Padding="20">
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Entry
+                x:Name="idEntry"
+                FontSize="18"
+                Text="{Binding Id}"
+                IsVisible="false" />
+        </StackLayout>
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Label
+                Text="Nombre Compañia:"
+                FontAttributes="Bold"
+                FontSize="20" />
+            <Entry
+                x:Name="nombreEntry"
+                Placeholder="Enter your name Company"
+                FontSize="18"
+                Text="{Binding Nombre}" />
+        </StackLayout>
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Label
+                Text="Direccion:"
+                FontAttributes="Bold"
+                FontSize="20" />
+            <Entry
+                x:Name="direccionEntry"
+                Placeholder="Enter your Direccion"
+                FontSize="18"
+                Text="{Binding Direccion}" />
+        </StackLayout>
+        <StackLayout
+            Orientation="Vertical"
+            Margin="10">
+            <Label
+                Text="Telefono:"
+                FontAttributes="Bold"
+                FontSize="20" />
+            <Entry
+                x:Name="telefonoEntry"
+                Placeholder="Enter your Telefono"
+                Keyboard="Numeric"
+                FontSize="18"
+                Text="{Binding Telefono}" />
+        </StackLayout>
+        <StackLayout
+            Orientation="Vertical"
+            Padding="10">
+            <Button
+                x:Name="submitButton"
+                FontSize="18"
+                Text="Actualizar"
+                FontAttributes="Bold"
+                Clicked="SubmitHandle" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
